@@ -1,5 +1,4 @@
-tent = results[idx];
-});const results = [
+const results = [
   "大吉🎉", 
   "中吉😊", 
   "小吉🙂", 
@@ -14,4 +13,5 @@ const resultDiv = document.getElementById("result");
 
 btn.addEventListener("click", () => {
   const idx = Math.floor(Math.random() * results.length);
-  resultDiv.textCon
+  resultDiv.textContent = results[idx];
+});
